@@ -7,6 +7,7 @@ import 'package:provider/provider.dart';
 import '../../api/api_manager.dart';
 import '../../api/model/Sources.dart';
 import '../../providers/languageProvider.dart';
+import '../../providers/themeprovider.dart';
 import '../../utils/SizeUtils.dart';
 import '../../widgets/MainErrprWidget.dart';
 import '../../widgets/MainLoadingWidget.dart';
@@ -19,6 +20,7 @@ class News extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     var languageProvider = Provider.of<LanguageProvider>(context);
+    var themeProvider = Provider.of<ThemeProvider>(context);
     return FutureBuilder(
       future: ApiManager.getNews(source.id ?? '', languageProvider.AppLanguage),
       builder: (context, snapshot) {
@@ -37,7 +39,9 @@ class News extends StatelessWidget {
           return newsList.isEmpty
               ? Center(
             child: Text(" ${AppLocalizations.of(context)!.noDataFound}",
-                style: AppStyles.medium20white),
+                style: themeProvider.isDark()
+                    ? AppStyles.medium20white
+                    : AppStyles.medium20black),
                 )
               : ListView.separated(
                   itemBuilder: (context, index) {
