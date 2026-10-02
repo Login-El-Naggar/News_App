@@ -1,0 +1,27 @@
+{
+"goodMorning":"Good Morning",
+"goodMorningHereIsSomeNewsForYou":"Good Morning Here is Some News For You",
+"home":"Home",
+"viewAll":"View All",
+"newsApp":"News App",
+"language":"language",
+"arabic":"Arabic",
+"english":"English",
+"theme":"theme",
+"dark":"Dark",
+"light":"Light",
+"goToHome":"Go To Home",
+"sports":"Sports",
+"business":"Business",
+"entertainment":"Entertainment",
+"general":"General",
+"health":"Health",
+"science":"Science",
+"technology":"Technology",
+"ok":"Ok",
+"someThingWentWrong":"Some Thing Went Wrong",
+"tryAgain": "Try Again",
+"newsApp": "News App",
+"sports":"Sports"
+
+}
