@@ -1,4 +1,3 @@
-
 {
   "goodMorning": "صباح الخير",
   "goodMorningHereIsSomeNewsForYou": "صباح الخير، إليك بعض الأخبار لك",
@@ -18,10 +17,9 @@
   "health": "الصحة",
   "science": "العلوم",
   "technology": "التكنولوجيا",
-  "ok": "حسنًا",
+  "by": "بواسطة",
+  "noDataFound": "لا توجد بيانات",
   "someThingWentWrong": "حدث خطأ ما",
-  "newsApp": "تطبيق الأخبار",
   "tryAgain": "حاول مرة أخرى",
   "business": "الأعمال"
 }
-

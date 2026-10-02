@@ -1,4 +1,3 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:news_app/api/model/homecategory_model/home_category.dart';
 import 'package:news_app/l10n/app_localizations.dart';
@@ -64,18 +63,13 @@ class CategoryCard extends StatelessWidget {
                       backgroundColor: themeProvider.isDark()
                           ? AppColors.black
                           : AppColors.white,
-                      child: IconButton(
-                        onPressed: () {
-                          // todo:navigater to details
-                        },
-                        icon: Icon(
-                          Icons.arrow_forward_ios_rounded,
+                        child:
+                        Icon(Icons.arrow_forward_ios,
                           color: themeProvider.isDark()
                               ? AppColors.white
-                              : AppColors.black,
-                        ),
+                              : AppColors.black,)
                       ),
-                    ),
+
                   ],
                 ),
               ),

@@ -131,7 +131,7 @@ abstract class AppLocalizations {
   /// No description provided for @language.
   ///
   /// In en, this message translates to:
-  /// **'language'**
+  /// **'Language'**
   String get language;
 
   /// No description provided for @arabic.
@@ -149,7 +149,7 @@ abstract class AppLocalizations {
   /// No description provided for @theme.
   ///
   /// In en, this message translates to:
-  /// **'theme'**
+  /// **'Theme'**
   String get theme;
 
   /// No description provided for @dark.
@@ -175,12 +175,6 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Sports'**
   String get sports;
-
-  /// No description provided for @business.
-  ///
-  /// In en, this message translates to:
-  /// **'Business'**
-  String get business;
 
   /// No description provided for @entertainment.
   ///
@@ -212,16 +206,22 @@ abstract class AppLocalizations {
   /// **'Technology'**
   String get technology;
 
-  /// No description provided for @ok.
+  /// No description provided for @by.
   ///
   /// In en, this message translates to:
-  /// **'Ok'**
-  String get ok;
+  /// **'By'**
+  String get by;
+
+  /// No description provided for @noDataFound.
+  ///
+  /// In en, this message translates to:
+  /// **'No Data Found'**
+  String get noDataFound;
 
   /// No description provided for @someThingWentWrong.
   ///
   /// In en, this message translates to:
-  /// **'Some Thing Went Wrong'**
+  /// **'Something Went Wrong'**
   String get someThingWentWrong;
 
   /// No description provided for @tryAgain.
@@ -229,6 +229,12 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Try Again'**
   String get tryAgain;
+
+  /// No description provided for @business.
+  ///
+  /// In en, this message translates to:
+  /// **'Business'**
+  String get business;
 }
 
 class _AppLocalizationsDelegate

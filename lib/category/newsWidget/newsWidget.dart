@@ -4,6 +4,7 @@ import 'package:news_app/utils/AppStyles.dart';
 import 'package:news_app/utils/SizeUtils.dart';
 import 'package:provider/provider.dart';
 
+import '../../l10n/app_localizations.dart';
 import '../../providers/themeprovider.dart';
 
 class NewsWidget extends StatelessWidget {
@@ -59,12 +60,11 @@ class NewsWidget extends StatelessWidget {
             children: [
               Flexible(
                 child: Text(
-                  " by $auther",
+                  " ${AppLocalizations.of(context)!.by} $auther",
                   style: AppStyles.bold14grey,
                   softWrap: true,
                 ),
               ),
-              //Text( data,style: AppStyles.bold14grey,maxLines: 1,)
             ],
           ),
         ],

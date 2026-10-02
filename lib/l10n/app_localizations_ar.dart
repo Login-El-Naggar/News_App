@@ -1,5 +1,6 @@
 // ignore: unused_import
 import 'package:intl/intl.dart' as intl;
+
 import 'app_localizations.dart';
 
 // ignore_for_file: type=lint
@@ -49,9 +50,6 @@ class AppLocalizationsAr extends AppLocalizations {
   String get sports => 'الرياضة';
 
   @override
-  String get business => 'الأعمال';
-
-  @override
   String get entertainment => 'الترفيه';
 
   @override
@@ -67,11 +65,17 @@ class AppLocalizationsAr extends AppLocalizations {
   String get technology => 'التكنولوجيا';
 
   @override
-  String get ok => 'حسنًا';
+  String get by => 'بواسطة';
+
+  @override
+  String get noDataFound => 'لا توجد بيانات';
 
   @override
   String get someThingWentWrong => 'حدث خطأ ما';
 
   @override
   String get tryAgain => 'حاول مرة أخرى';
+
+  @override
+  String get business => 'الأعمال';
 }

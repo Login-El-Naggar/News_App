@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:news_app/category/newsWidget/newsWidget.dart';
+import 'package:news_app/l10n/app_localizations.dart';
 import 'package:news_app/utils/AppStyles.dart';
 import 'package:provider/provider.dart';
 
@@ -35,7 +36,8 @@ class News extends StatelessWidget {
           var newsList = snapshot.data!.articles ?? [];
           return newsList.isEmpty
               ? Center(
-                  child: Text(" no data found", style: AppStyles.medium20white),
+            child: Text(" ${AppLocalizations.of(context)!.noDataFound}",
+                style: AppStyles.medium20white),
                 )
               : ListView.separated(
                   itemBuilder: (context, index) {

@@ -1,11 +1,9 @@
-import 'package:flutter/cupertino.dart';
-import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:news_app/api/model/homecategory_model/home_category.dart';
 import 'package:news_app/category/categoryDetails.dart';
 import 'package:news_app/home_category/homeCategory.dart';
-import 'package:news_app/utils/AppRouts.dart';
 import 'package:provider/provider.dart';
+
 import '../l10n/app_localizations.dart';
 import '../providers/languageProvider.dart';
 import '../providers/themeprovider.dart';
@@ -39,7 +37,14 @@ class _HomePageState extends State<HomePage> {
     return SafeArea(
       child: Scaffold(
         appBar: AppBar(
-          // title: Text(categoryList[index].title),
+          title: Text(
+            selectedCategory == null
+                ? AppLocalizations.of(context)!.general
+                : selectedCategory!.title,
+            style: themeProvider.isDark()
+                ? AppStyles.bold24white
+                : AppStyles.bold24black,
+          ),
           actions: [
             IconButton(
               onPressed: () {
@@ -68,9 +73,16 @@ class _HomePageState extends State<HomePage> {
                   ),
                 ),
               ),
-              ReusableRawWidget(
-                icon: Icons.home_outlined,
-                txt: AppLocalizations.of(context)!.goToHome,
+              InkWell(
+                onTap: () {
+                  selectedCategory = null;
+                  Navigator.pop(context);
+                  setState(() {});
+                },
+                child: ReusableRawWidget(
+                  icon: Icons.home_outlined,
+                  txt: AppLocalizations.of(context)!.goToHome,
+                ),
               ),
               Divider(
                 thickness: 2,
